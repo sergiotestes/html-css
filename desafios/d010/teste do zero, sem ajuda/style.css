@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'fontedopai';
+  src: url('d010/fontes/idroid.otf') format('opentype');
+}
+
+html{
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgb(255, 242, 225);
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    text-indent: 30px;
+}
+
+
+
+
+
+header{
+    background: linear-gradient(180deg,rgba(255, 245, 232, 1) 0%, rgba(245, 193, 142, 1) 50%, rgba(255, 139, 23, 1) 100%);;
+    margin: 0;
+    margin: 0;
+    padding: 20px;
+
+}
+header > h1{
+    margin: 0;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    text-shadow: 0px 3px 3px black;
+    
+}
+header > h2{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color: white;
+    text-shadow: 0px 3px 3px black;
+}
+
+
+
+
+
+
+.h1article{
+    font-family: 'fontedopai';
+    font-size: 30px;
+    color: rgb(112, 69, 17);
+}
+
+.h2article{
+    background-color: rgb(255, 250, 243);
+    font-family: 'fontedopai';
+    font-size: 20px;
+    color: rgb(112, 69, 17);
+}
+
+
+
+.conteudo01{
+    background-color: white;
+    margin: 0px 80px;
+    padding: 10px;
+    box-shadow: 0px 5px 14px 3px black;
+    
+}
+
+.conteudo02{
+    background-color: white;
+    margin: 0px 80px 20px 80px;
+    padding: 10px;
+    box-shadow: 0px 5px 14px 3px black;
+    border-radius: 0px 0px 10px 10px;
+}
+
+
+
+.incorporar {
+    margin: 10px 80px;
+    padding: 10px;
+    box-shadow: 0px 5px 14px 3px black;
+    background-color: rgb(112, 69, 17);
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.container {
+    background-color: rgb(243, 236, 227);
+    box-shadow: 4px 3px 7px 0px rgba(0, 0, 0, 0.253);
+    border-radius: 10px;
+}
+.container > h2{
+    background-color: rgb(207, 153, 87);
+    color: white;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+footer{
+    background-color: rgb(112, 69, 17);
+    padding: 2px;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}

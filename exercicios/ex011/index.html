@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir este site em dispositivos diferentes para uma melhor visualização da imagem</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Somebody to Love - Justin Bieber ft. Usher</p>
+    <audio src="midia/smb to love - jb.mp3" controls autoplay></audio>
+    
+    <!--Outra opção ( Mais Completa )-->
+    <p>Never say Never - Justin Bieber ft. Jaden</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/nvsnv - jb.mp3" type="audio/mpeg"> 
+        <source src="midia/nvsnv - jb.wav" type="audio/ogg"> 
+        <source src="midia/nvsnv - jb.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/nvsnv - jb.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elementos</title>
+
+    <style>
+        div.atention::before{
+            content: '⚠️';
+        }
+
+        div.fail:before{
+            content: '❌';
+        }
+
+        div.sucess:before{
+            content: '✅';
+        }
+    </style>
+</head>
+<body>
+    <h1>Desafio com Pseudo-elementos</h1>
+    <div class="atention">Aviso</div>
+    <picture>
+        <source media="(min-width: )" srcset="">
+    </picture>
+    <div class="fail">Erro</div>
+    <div class="sucess">Sucesso</div>
+</body>
+</html>
