@@ -1,5 +1,13 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Hand:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans+Hebrew:wght@100..800&display=swap');
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: "Edu SA Hand", cursive;
+    --fonte3: "Playpen Sans Hebrew", cursive;
+}
 * {
     margin: 0px;
     padding: 0px;
@@ -8,6 +16,7 @@
 html, body {
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 
 
@@ -16,15 +25,20 @@ header{
     background-color: black;
     color: white;
     text-align: center;
+    line-height: 40px
 }
 
 header > h1{
+    font-family: var(--fonte2);
     padding-top: 50px;
-    font-variant: small-caps;
+    font-size: 3em;
+    padding-bottom: 0;
 }
 
 header > p{
+    
     padding-bottom: 50px;
+    font-family: var(--fonte3);
 }
 
 
@@ -44,6 +58,7 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte3);
 }
 
 .normal{
@@ -57,7 +72,8 @@ section{
 }
 .imagem > p{
     background-color: rgba(0, 0, 0, 0.493);
-    width: 300px;
+    display: inline-block;
+    padding: 7px;
 }
 
 footer{
