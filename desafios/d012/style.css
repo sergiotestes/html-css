@@ -76,6 +76,11 @@ section{
     padding: 7px;
 }
 
+#unico {
+    margin-bottom: 25px;
+}
+
+
 footer{
     background-color: rgb(14, 13, 13);
     color: white;
