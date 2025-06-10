@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Média</title>
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 600px; 
+            text-align: center;
+            border-collapse: collapse;
+
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        th, .tfootfalse{
+            background-color: gray;
+            color: white;
+        }
+
+        .tfootfalse{
+            text-align: left;
+        }
+
+        #semisso{
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <theader>
+            <tr>
+                <th rowspan="2">Áreas
+                <th rowspan="2">Disciplinas
+                <th colspan="2">Notas
+                <th rowspan="2">Média
+                
+            </tr>
+
+            <tr>
+                <th>Nota 1
+                <th>Nota 2
+            </tr>
+        </theader>
+        
+        <tbody>
+            <tr>
+                <th rowspan="5" id="semisso">Exatas
+                <td>Matemática
+                <td>0
+                <td>1
+                <td>2
+            </tr>
+
+            <tr>
+                <td >Física
+                <td>0
+                <td>1
+                <td>2
+            </tr>
+
+            <tr>
+                <td>Química
+                <td>0
+                <td>1
+                <td>2
+            </tr>
+
+            <tr>
+                <td>Biologia
+                <td>0
+                <td>1
+                <td>2
+            </tr>
+            
+        </tbody>
+
+        <tr>
+            <th colspan="4" class="tfootfalse">Média de Exatas
+            <th class="tfootfalse">10
+        </tr>
+
+        <tbody>
+            <tr>
+                <th rowspan="2" id="semisso">Humanas
+                <td>História
+                <td>0
+                <td>1
+                <td>2
+            </tr>
+
+            <tr>
+                <td>Geografia
+                <td>0
+                <td>1
+                <td>2
+            </tr>
+
+            <tr>
+            <th colspan="4" class="tfootfalse">Média de Humanas
+            <th class="tfootfalse">10
+        </tr>
+        </tbody>
+    
+    </table>
+
+    
+</body>
+</html>
