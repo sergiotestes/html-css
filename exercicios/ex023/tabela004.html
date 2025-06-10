@@ -12,7 +12,7 @@
 
         }
 
-        td{
+        td, th{
             border: 1px solid black;
             padding: 10px;
         }
@@ -21,13 +21,13 @@
 <body>
     <table>
         <tr>
-            <td class><strong>Grupo</strong>
-            <td><strong>Nomes</strong>
-            <td colspan="3"><strong>Filmes</strong>
+            <th scope="col"><strong>Grupo</strong>
+            <th scope="col"><strong>Nomes</strong>
+            <th colspan="3" scope="colgroup "><strong>Filmes</strong>
         </tr>
 
         <tr>
-            <td rowspan="3"><strong>Mulheres</strong>
+            <td rowspan="3" scope="rowgroup"><strong>Mulheres</strong>
             <td>Ana Maria
             <td>Alien
             <td>Rambo
@@ -49,7 +49,7 @@
         </tr>
         
         <tr>
-            <td rowspan="3"><strong>Homens</strong>
+            <th rowspan="3" scope="rowgroup"><strong>Homens</strong>
             <td>Bruno Mendonça
             <td>Intocáveis 
             <td>Amnésia
@@ -69,6 +69,11 @@
             <td>Taxi Driver
             <td>Toy Story
         </tr>
+
+        <tfoot>
+            <th colspan="4" scope="row">Total
+            <td>1000
+        </tfoot>
     </table>
 </body>
 </html>
