@@ -2,6 +2,107 @@
 
 /* Todas as demais mídias*/
 
+/*  Typical Device Breakpoints
+-------------------------------------
+
+Pequnas Telas: até 599px
+Celular: de 600px até 768px
+Tablet: de 768px até 992px
+Desktop: de 992px até 1200px
+Grandes telas: acima de 1200px
+
+-------------------------------------
+*/
+
+/* ----------------------------------- IMPRESSORA ----------------------------------------- */
+
 @media print {
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body{
+        /* background-image: url(../imagens/back-print.jpg); ---- Desnecessário*/
+        
+    }
+
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+
+    main{
+        width: 90vw;
+        height: 90vh;
+        border: 2px solid black;
+    }
+
+    #phone{ display: none;}
+    #tablet{ display: none;}
+    #printer{ display: block;}
+    #pc{ display: none;}
+    #tv{ display: none;}
+}
+
+
+
+
+/* -------------------------------- TABLET -------------------------------------------- */
+ 
+@media screen and (min-width:  768px) and (max-width: 992px){
     
+    
+
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+        
+    }
+
+    #phone{ display: none;}
+    #tablet{ display: block;}
+    #printer{ display: none;}
+    #pc{ display: none;}
+    #tv{ display: none;}
+}
+
+
+
+
+/* ----------------------------------- DESKTOP ----------------------------------------- */
+
+@media screen and (min-width:  992px) and (max-width: 1200px){
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+        
+    }
+
+    #phone{ display: none;}
+    #tablet{ display: none;}
+    #printer{ display: none;}
+    #pc{ display: block;}
+    #tv{ display: none;}
+}
+
+
+
+
+/* ------------------------------- GRANDES TELAS --------------------------------------------- */
+
+@media screen and (min-width:  1200px){
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main{
+        width: 800px;
+        height: 500px;
+        background-color: rgba(0, 0, 0, 0.575);
+    }
+    
+
+    #phone{ display: none;}
+    #tablet{ display: none;}
+    #printer{ display: none;}
+    #pc{ display: none;}
+    #tv{ display: block;}
 }
