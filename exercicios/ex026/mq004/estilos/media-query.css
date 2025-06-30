@@ -23,7 +23,7 @@ Grandes telas: acima de 1200px
 
     body{
         /* background-image: url(../imagens/back-print.jpg); ---- Desnecessário*/
-        
+        background-color: white;
     }
 
     main h1{
